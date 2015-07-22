@@ -1,0 +1,26 @@
+<div class="hk-title-bar">
+	<div class="row">
+		<div class="hk-logo-area col-sm-6">
+			<img ng-src="{{ iconFile }}" alt="logo">
+			<div class="hk-title-area"> here - {{ routeString }}
+				<div class="hk-logo-title">{{ title }}</div>
+				<div class="hk-logo-subtitle">{{ subtitle }}</div>
+			</div>
+
+			<div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()" class="hk-collapsed-menu pull-right">
+				<button class="btn hk-nav-button"> 
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+		</div>
+		<div class="hk-right-side-controls col-sm-6">
+			<div>
+				<button class="btn btn-success">Success</button>
+				<button class="btn btn-primary">Primary</button>
+				<button class="btn btn-danger">Danger</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div ng-transclude />
+

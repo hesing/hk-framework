@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sample Page</title>
+
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+
+		<link rel="stylesheet" href="ext-modules/hkFramework/hkFramework.css">
+		<link rel="stylesheet" href="ext-modules/hkMenu/hkMenu.css">
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body ng-controller="AppCtrl as app">
+		<hk-framework title="Awesome APP" subtitle="my angular awesome application" icon-file="images/logo.png">
+			
+			<hk-menu>
+				<hk-menu-item label="Dashboard" icon="fa-dashboard" route="dashboard"></hk-menu-item>
+				<hk-menu-item label="Locations" icon="fa-location-arrow" route="locations"></hk-menu-item>
+				<hk-menu-item label="Guides" icon="fa-user" route="guides"></hk-menu-item>
+			</hk-menu>
+
+
+		</hk-framework>
+
+<!-- 		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" ui-sref="home">Demo App</a>
+			</div>
+		
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+					<li ui-sref-active="active"><a ui-sref="about">About</a></li>
+				</ul>
+			</div>
+			</div>
+		</nav>
+		<div class="container-fluid" ui-view>
+			<h1 class="text-center">Hello World</h1>
+		</div>
+		<div class="container-fluid">
+			<h1>App controller content</h1>
+			<ul class="list-group">
+				<li class="list-group-item" ng-repeat="user in app.users">{{ user.name }} - {{ user.age }}</li>
+			</ul>
+		</div> -->
+
+		<script src="vendor/jquery-2.1.4.js"></script>
+		<script src="vendor/angular.js"></script>
+		<script src="vendor/angular-ui-router.js"></script>
+
+		<script src="ext-modules/hkFramework/hkFrameworkModule.js"></script>
+		<script src="ext-modules/hkFramework/hkFrameworkDirective.js"></script>
+		<script src="ext-modules/hkFramework/hkFrameworkController.js"></script>
+
+		
+		<script src="ext-modules/hkDashboard/hkDashboardModule.js"></script>
+		
+
+		<script src="ext-modules/hkMenu/hkMenuModule.js"></script>
+		<script src="ext-modules/hkMenu/hkMenuDirective.js"></script>
+		<script src="ext-modules/hkMenu/hkMenuController.js"></script>
+		<script src="ext-modules/hkMenu/hkMenuItemDirective.js"></script>
+
+		<script src="js/appModule.js"></script>
+		<script src="js/appConfig.js"></script>
+		<script src="js/controllers/AppCtrl.js"></script>
+		<script src="js/services/UserService.js"></script>
+	</body>
+</html>

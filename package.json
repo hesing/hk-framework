@@ -1,0 +1,24 @@
+{
+  "name": "ng-framework",
+  "version": "1.0.0",
+  "description": "```\r npm install\r node server.js\r ```",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hesing/hk-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hesing/hk-framework/issues"
+  },
+  "homepage": "https://github.com/hesing/hk-framework#readme"
+}
