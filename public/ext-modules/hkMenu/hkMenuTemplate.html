@@ -1,4 +1,6 @@
-<div class="hk-menu-area" ng-show="showMenu">
-	<ul class="hk-menu hk-noselect" ng-transclude>
-	</ul>
+<div>
+	<ul class="hk-menu hk-noselect" ng-transclude></ul>
+	<a class="btn hk-menu-layout-btn" ng-click="toggleMenuOrientation()" ng-class="{'hk-layout-btn-horizontal': !isVertical}" ng-show="allowHorizontalToggle">
+		<i class="fa" ng-class="{'fa-chevron-up': isVertical, 'fa-chevron-left': !isVertical}"></i>
+	</a>
 </div>

@@ -33,7 +33,7 @@
 
 .hk-logo-subtitle{
 	font-size: 13px;
-	margin-top: -10px;
+	margin-top: -8px;
 }
 
 .hk-right-side-controls > div{
@@ -45,4 +45,61 @@
 	.hk-right-side-controls > div{
 		text-align: right;
 	}
+}
+
+.hk-view{
+	margin-left: 200px;
+	padding: 20px;
+	background-color: #ccc;
+	min-height: 100vh;
+	overflow: auto;
+}
+
+.hk-view-full-width{
+	margin-left: 0;
+}
+
+.hk-user-profile {
+    background-color: #333;
+    color: white;
+    width: 200px;
+    min-height: 120px;
+    padding-top: 10px;
+}
+
+.hk-user-profile > div {
+    display: inline-block;
+    padding-top: 10px;
+    margin-left: 5px;
+}
+
+.hk-user-profile > div > p {
+    margin-bottom: 2px;
+}
+
+.hk-user-profile > div > button {
+    margin-top: 8px;
+}
+
+.hk-user-profile img {
+    float: left;
+    margin: 12px;
+    width: 80px;
+    height: 80px;
+}
+
+.hk-user-profile-small {
+    color: #333;
+    padding-top: 4px;
+}
+
+.hk-user-profile-small > span {
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hk-user-profile-small img {
+    width: 40px;
+    height: 40px;
 }

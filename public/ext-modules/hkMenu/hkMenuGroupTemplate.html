@@ -1,0 +1,7 @@
+<li class="hk-selectable-item" ng-class="{'active': isActive(), 'hk-item-horizontal': !isVertical() }" ng-click="clicked()">
+	<i class="fa {{icon}} hk-menu-icon"></i> {{ label }}
+	<i class="fa fa-arrow-right pull-right hk-arrow" ng-class="{'fa-rotate-90': isOpen}"></i>
+</li>
+<div ng-show="isOpen" class="hk-subitem-section hk-fade-in-animation" ng-class="{'hk-popup-menu': !isVertical()}"> 
+	<ul ng-transclude></ul>
+</div>

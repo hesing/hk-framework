@@ -3,9 +3,26 @@
 	background: #333;
 	color: #ccc;
 	padding-left: 0;
+}
+
+.hk-menu-area-vertical{
+	float: left;
 	width: 200px;
 	min-height: 100vh;
 	padding-top: 30px;
+}
+
+.hk-menu-area-horizontal{
+	width: 100%;
+	height: 40px;
+}
+
+.hk-item-horizontal{
+	display: inline-block;
+	width: 165px !important;
+	margin-left: 20px;
+	margin-top: 5px;
+	line-height: 1.5em !important;
 }
 
 .hk-menu-area .btn:hover{
@@ -68,4 +85,44 @@
 	padding: 0;
 	font-size: 26px;
 	color: #777;
+}
+
+.hk-arrow{
+	margin-right: 12px;
+	margin-top: 13px;
+}
+
+.hk-menu .hk-subitem-section li{
+    margin-left: -16px;
+    padding-left: 32px;
+}
+
+.hk-menu-layout-btn{
+	margin: 12px;
+	padding: 2px 8px;
+	color: #bbb;
+	background-color: #333;
+	border: 1px solid #999;
+}
+
+.hk-layout-btn-horizontal{
+	position: absolute;
+	top: -6px;
+	right: 10px;
+}
+
+.hk-popup-menu{
+	position: absolute;
+	z-index: 1000;
+	background-color: #333;
+	width: 200px;
+	padding-left: 0;
+}
+
+.hk-fade-in-animation{
+	transition: linear all .3s;
+}
+
+.hk-fade-in-animation.ng-hide{
+	opacity: 0;
 }

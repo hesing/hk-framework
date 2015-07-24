@@ -1,1 +1,1 @@
-angular.module("myApp", ['ui.router', 'hkFramework']);
+angular.module("myApp", ['ngAnimate', 'ui.router','ui.bootstrap', 'ngStorage', 'hkFramework']);

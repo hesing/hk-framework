@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="hk-logo-area col-sm-6">
 			<img ng-src="{{ iconFile }}" alt="logo">
-			<div class="hk-title-area"> here - {{ routeString }}
+			<div class="hk-title-area">
 				<div class="hk-logo-title">{{ title }}</div>
 				<div class="hk-logo-subtitle">{{ subtitle }}</div>
 			</div>
@@ -14,13 +14,13 @@
 			</div>
 		</div>
 		<div class="hk-right-side-controls col-sm-6">
-			<div>
-				<button class="btn btn-success">Success</button>
-				<button class="btn btn-primary">Primary</button>
-				<button class="btn btn-danger">Danger</button>
-			</div>
+			<hk-user-profile-small></hk-user-profile-small>
 		</div>
 	</div>
 </div>
-<div ng-transclude />
+<div class="hk-menu-area" ng-show="isMenuVisible" ng-class="{'hk-menu-area-vertical': isMenuVertical, 'hk-menu-area-horizontal': !isMenuVertical}">
+	<hk-user-profile></hk-user-profile>
+	<ng-transclude />
+</div>
+<div ui-view class="hk-view" ng-class="{'hk-view-full-width': !isMenuVertical || !isMenuVisible}"></div>
 

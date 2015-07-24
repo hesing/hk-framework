@@ -1,1 +1,1 @@
-angular.module("hkDashboard", []);
+angular.module("hkDashboard", ['gridster']);

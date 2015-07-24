@@ -1,0 +1,38 @@
+<div class="hk-dashboard-header">
+	{{ title }}
+
+    <div class="hk-dashboard-controls">
+
+    <div class="btn-group" dropdown is-open="status.isopen">
+      <button type="button" class="btn btn-primary btn-sm dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+		<i class="fa fa-plus"></i>
+        Add Widget
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+        <li ng-repeat="widget in widgetDefinitions">
+            <a role="menuitem" ng-click="addNewWidget(widget)">{{widget.title}}</a>
+        </li>
+      </ul>
+    </div>
+
+    </div>
+</div>
+<div gridster="gridsterOpts">
+	<ul>
+		<li gridster-item="item" ng-repeat="item in widgets">
+<!-- 			<div class="hk-widget-header" ng-if="item.title">
+				<span>{{ item.title }}</span>
+				<div class="hk-widget-eader-buttons">
+					<button class="btn btn-default pull-right">
+						<i class="fa fa-remove"></i>
+					</button>
+					<button class="btn btn-default pull-right">
+						<i class="fa fa-gear"></i>
+					</button>
+				</div>
+			</div> -->
+			<hk-widget-body></hk-widget-body>
+		</li>
+	</ul>
+</div>

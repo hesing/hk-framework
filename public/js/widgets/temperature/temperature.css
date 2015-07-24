@@ -1,0 +1,60 @@
+.temperature-widget{
+	height: 100%;
+	width: 100%;
+	min-height: 180px;
+	font-size: 16px;
+	color: #000;
+}
+
+.temperature-heading{
+	background-color: red;
+	color: #fff;
+	height: 32px;
+	padding-top: 2px;
+	font-size: 15px;
+	line-height: 32px;
+}
+
+.temperature-icon{
+	width: 24px;
+	height: 24px;
+	margin-top: -2px;
+}
+
+.temperature-body{
+	position: relative;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	min-height: 180px;
+}
+
+.temperature-view {
+    background-color: rgba(255,255,255,.7);
+    position: absolute;
+    right: 5px;
+    bottom: 38px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.temperature-river-name {
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.temperature-degrees {
+    font-size: 64px;
+    margin-top: -20px;
+}
+
+.temperature-body .fa-spin{
+	position: absolute;
+	left: 10px;
+	top:10px;
+}

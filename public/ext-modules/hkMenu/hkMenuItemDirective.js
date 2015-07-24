@@ -14,6 +14,10 @@ angular.module("hkMenu")
 					return elm === hkMenuCtrl.getActiveItem();
 				};
 
+				scope.isVertical = function(){
+					return  hkMenuCtrl.isVertical() || elm.parents(".hk-subitem-section").length;
+				};
+
 				elm.on("click", function(evt){
 					evt.stopPropagation();
 					evt.preventDefault();
