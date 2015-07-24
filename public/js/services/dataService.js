@@ -82,9 +82,9 @@ angular.module('myApp').factory('dataService',
     var employees = [
         {
             id: 5000,
-            name: 'Andy Chatterton',
-            location: 'Raquette River',
-            image: 'employee-andy.png'
+            name: 'Hemant Singh',
+            location: 'Hyderabad',
+            image: 'employee-hemant.png'
         },
         {
             id: 5001,

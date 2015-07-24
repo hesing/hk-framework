@@ -5,6 +5,8 @@ npm install
 node server.js
 ```
 
+![Modular App](gitscreen.png)
+
 ## Generate Module css & js
 
 ```
